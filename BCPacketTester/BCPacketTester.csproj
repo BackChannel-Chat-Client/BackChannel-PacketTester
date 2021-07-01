@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>Segoe MDL2 Assets Regular - Network Physical.png</PackageIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>BCPTKey.pfx</AssemblyOriginatorKeyFile>
+    <Version>1.4.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icon1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\Documents\GitHub\BackChannel-Client\Assets\Segoe MDL2 Assets Regular - Network Physical.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icon1.ico" />
+  </ItemGroup>
+
+</Project>
